@@ -1,0 +1,895 @@
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        ul,
+
+        #myUL {
+            list-style-type: none;
+        }
+
+        #myUL {
+            margin: 0;
+            padding: 0;
+        }
+
+        .caret {
+            cursor: pointer;
+            -webkit-user-select: none;
+            /* Safari 3.1+ */
+            -moz-user-select: none;
+            /* Firefox 2+ */
+            -ms-user-select: none;
+            /* IE 10+ */
+            user-select: none;
+        }
+
+        .caret::before {
+            content: "\25B6";
+            color: black;
+            display: inline-block;
+            margin-right: 6px;
+        }
+
+        .caret-down::before {
+            -ms-transform: rotate(90deg);
+            /* IE 9 */
+            -webkit-transform: rotate(90deg);
+            /* Safari */
+            transform: rotate(90deg);
+        }
+
+        .nested {
+            display: none;
+        }
+
+        .active {
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <body style="background-color:rgb(230, 157, 184);"></body>
+
+    <!DOCTYPE html>
+    <html>
+
+    <head>
+        <title>
+            Create a Table of Content in Tree
+            View Architecture using HTML, CSS
+            and JavaScript
+        </title>
+
+        <style>
+            h1 {
+                text-align: center;
+                color: rgb(228, 15, 15);
+            }
+
+            .gfg {
+                cursor: pointer;
+            }
+
+            .gfg::before {
+
+                content: "\25B6";
+                color: black;
+                display: inline-block;
+                margin-right: 12px;
+            }
+
+            .cover {
+                display: none;
+            }
+
+            .active {
+
+                display: block;
+            }
+
+            ol [type=a] {
+
+                background-color: rgb(245, 245, 244);
+                color: purple;
+            }
+        </style>
+    </head>
+
+    <body>
+
+        <h1>
+
+            Road Map to the courses:
+        </h1>
+        <b>"CLICK" below to access </b>
+        <br>
+        <ul id="tuitorial">
+            <li><span class="gfg"> Media and Entertainment </span>
+                <ol class="cover" type="i">
+
+
+                    <li>
+                        <spna class="gfg">Film</span>
+                            <ol class="cover" type="a">
+
+
+                                <li>Actor</li>
+
+
+                            </ol>
+                    </li>
+                    <li>
+                        <spna class="gfg">Television</span>
+                            <ol class="cover" type="a">
+                                <li>Art director</li>
+
+
+                            </ol>
+                    </li>
+                    <li>
+                        <span class="gfg">Radio</span>
+                        <ol class="cover" type="a">
+                            <li>Sound engineer</li>
+
+
+                        </ol>
+
+                    <li>
+                        <spna class="gfg">Advertising</span>
+
+                            <ol class="cover" type="a">
+                                <li>Graphic designer</li>
+
+
+                            </ol>
+
+
+                    </li>
+
+                    <li>
+
+                        <spna class="gfg">Animation</span>
+                            <ol class="cover" type="a">
+                                <li>Animator</li>
+
+
+                            </ol>
+
+
+                    </li>
+
+            </li>
+            </ol>
+            </li>
+        </ul>
+
+
+
+
+
+
+
+
+
+        <br>
+        <ul id="tuitorial">
+            <li><span class="gfg">IT-ITes </span>
+                <ol class="cover" type="i">
+
+
+                    <li>
+                        <spna class="gfg">IT services </span>
+                            <ol class="cover" type="a">
+
+
+                                <li>Analyst</li>
+
+
+                            </ol>
+                    </li>
+                    <li>
+                        <spna class="gfg">Business process management </span>
+                            <ol class="cover" type="a">
+                                <li>Collections executive</li>
+
+
+                            </ol>
+                    </li>
+                    <li>
+                        <span class="gfg">Engineering R&D</span>
+                        <ol class="cover" type="a">
+                            <li>Software engineer</li>
+
+
+                        </ol>
+
+                    <li>
+                        <spna class="gfg">Software product development</span>
+
+                            <ol class="cover" type="a">
+                                <li>Design engineer</li>
+
+
+                            </ol>
+
+
+                    </li>
+
+                    <li>
+
+                        <spna class="gfg">Future skills</span>
+                            <ol class="cover" type="a">
+                                <li>Blockchain architect</li>
+
+
+                            </ol>
+
+
+                    </li>
+
+            </li>
+            </ol>
+            </li>
+        </ul>
+
+
+
+
+
+        <br>
+        <ul id="tuitorial">
+            <li><span class="gfg">Construction </span>
+                <ol class="cover" type="i">
+
+
+                    <li>
+                        <spna class="gfg">Construction
+                            </span>
+                            <ol class="cover" type="a">
+
+
+                                <li>Assistant surveyor</li>
+
+
+                            </ol>
+                    </li>
+                    <li>
+                        <spna class="gfg">Construction and electrical works </span>
+                            <ol class="cover" type="a">
+                                <li>Assistant electrician</li>
+
+
+                            </ol>
+                    </li>
+                    <li>
+                        <span class="gfg">Masonry</span>
+                        <ol class="cover" type="a">
+                            <li>Brick mason</li>
+
+
+                        </ol>
+
+                    <li>
+                        <spna class="gfg">Real estate infrastructure construction </span>
+
+                            <ol class="cover" type="a">
+                                <li>Technician</li>
+
+
+                            </ol>
+
+
+                    </li>
+
+                    <li>
+
+                        <spna class="gfg">Rural infrastucture construction</span>
+                            <ol class="cover" type="a">
+                                <li>Rural mason</li>
+
+
+                            </ol>
+
+
+                    </li>
+
+            </li>
+            </ol>
+            </li>
+        </ul> </span>
+        <ol class="cover" type="i">
+
+
+            <li>
+                <spna class="gfg">IT services </span>
+                    <ol class="cover" type="a">
+
+
+                        <li>Analyst</li>
+
+
+                    </ol>
+            </li>
+            <li>
+                <spna class="gfg">Business process management </span>
+                    <ol class="cover" type="a">
+                        <li>Collections executive</li>
+
+
+                    </ol>
+            </li>
+            <li>
+                <span class="gfg">Engineering R&D</span>
+                <ol class="cover" type="a">
+                    <li>Software engineer</li>
+
+
+                </ol>
+
+            <li>
+                <spna class="gfg">Software product development</span>
+
+                    <ol class="cover" type="a">
+                        <li>Design engineer</li>
+
+
+                    </ol>
+
+
+            </li>
+
+            <li>
+
+                <spna class="gfg">Future skills</span>
+                    <ol class="cover" type="a">
+                        <li>Blockchain architect</li>
+
+
+                    </ol>
+
+
+            </li>
+
+            </li>
+        </ol>
+        </li>
+        </ul>
+
+
+
+
+        <br>
+        <ul id="tuitorial">
+            <li><span class="gfg">Healthcare </span>
+                <ol class="cover" type="i">
+
+
+                    <li>
+                        <spna class="gfg">Allied health and paramedics
+                            </span>
+                            <ol class="cover" type="a">
+
+
+                                <li>Anaesthesia technician</li>
+
+
+                            </ol>
+                    </li>
+                    <li>
+                        <spna class="gfg">Social work and community health </span>
+                            <ol class="cover" type="a">
+                                <li>Genetic counsellor</li>
+
+
+                            </ol>
+                    </li>
+                    <li>
+                        <span class="gfg">AYUSH</span>
+                        <ol class="cover" type="a">
+                            <li>Ayurveda dietician</li>
+
+
+                        </ol>
+
+                    <li>
+                        <spna class="gfg">Healthcare management </span>
+
+                            <ol class="cover" type="a">
+                                <li>Patient relations associate</li>
+
+
+                            </ol>
+
+
+                    </li>
+
+                    <li>
+
+                        <spna class="gfg">Generic</span>
+                            <ol class="cover" type="a">
+                                <li>General duty assistant</li>
+
+
+                            </ol>
+
+
+                    </li>
+
+            </li>
+            </ol>
+            </li>
+        </ul>
+
+
+
+
+        <br>
+        <ul id="tuitorial">
+            <li><span class="gfg">Gem and Jewellery </span>
+                <ol class="cover" type="i">
+
+
+                    <li>
+                        <spna class="gfg">Diamond processing
+                            </span>
+                            <ol class="cover" type="a">
+
+
+                                <li>Laser supervisor</li>
+
+
+                            </ol>
+                    </li>
+                    <li>
+                        <spna class="gfg">Handmade gold and gem-set jewellery </span>
+                            <ol class="cover" type="a">
+                                <li>Jewellery designer</li>
+
+
+                            </ol>
+                    </li>
+                    <li>
+                        <span class="gfg">Jewellery retail</span>
+                        <ol class="cover" type="a">
+                            <li>Retail merchandiser</li>
+
+
+                        </ol>
+
+                    <li>
+                        <spna class="gfg">Cast and diamond-set jewellery </span>
+
+                            <ol class="cover" type="a">
+                                <li>Polisher and cleaner</li>
+
+
+                            </ol>
+
+
+                    </li>
+
+                    <li>
+
+                        <spna class="gfg">Gemstone processing</span>
+                            <ol class="cover" type="a">
+                                <li>Calibrator</li>
+
+
+                            </ol>
+
+
+                    </li>
+
+            </li>
+            </ol>
+            </li>
+        </ul>
+
+
+
+        <br>
+        <ul id="tuitorial">
+            <li><span class="gfg">Capital Goods </span>
+                <ol class="cover" type="i">
+
+
+                    <li>
+                        <spna class="gfg">Machine tools
+                            </span>
+                            <ol class="cover" type="a">
+
+
+                                <li>Metal arc weldor</li>
+
+
+                            </ol>
+                    </li>
+                    <li>
+                        <spna class="gfg">Dies </span>
+                            <ol class="cover" type="a">
+                                <li>CNC programmer</li>
+
+
+                            </ol>
+                    </li>
+                    <li>
+                        <span class="gfg">Moulds and press tools</span>
+                        <ol class="cover" type="a">
+                            <li>Designer mechanical</li>
+
+
+                        </ol>
+
+                    <li>
+                        <spna class="gfg">Textile manufacturing machinery </span>
+
+                            <ol class="cover" type="a">
+                                <li>Fitter fabrication</li>
+
+
+                            </ol>
+
+
+                    </li>
+
+                    <li>
+
+                        <spna class="gfg">Plastics manufacturing machinery</span>
+                            <ol class="cover" type="a">
+                                <li>Production engineer</li>
+
+
+                            </ol>
+
+
+                    </li>
+
+            </li>
+            </ol>
+            </li>
+        </ul>
+
+
+
+
+        <br>
+        <ul id="tuitorial">
+            <li><span class="gfg">Electronics </span>
+                <ol class="cover" type="i">
+
+
+                    <li>
+                        <spna class="gfg">Strategic electronics
+                            </span>
+                            <ol class="cover" type="a">
+
+
+                                <li>Electronic sub-assembly technician</li>
+
+
+                            </ol>
+                    </li>
+                    <li>
+                        <spna class="gfg">PCB assembly </span>
+                            <ol class="cover" type="a">
+                                <li>PCB cam engineer</li>
+
+
+                            </ol>
+                    </li>
+                    <li>
+                        <span class="gfg">IT hardware</span>
+                        <ol class="cover" type="a">
+                            <li>HVAC technician</li>
+
+
+                        </ol>
+
+                    <li>
+                        <spna class="gfg">Industrial electronics </span>
+
+                            <ol class="cover" type="a">
+                                <li>Electrical design developer</li>
+
+
+                            </ol>
+
+
+                    </li>
+
+                    <li>
+
+                        <spna class="gfg">Electronics and hardware
+                            </span>
+                            <ol class="cover" type="a">
+                                <li>Field engineer RCAW</li>
+
+
+                            </ol>
+
+
+                    </li>
+
+            </li>
+            </ol>
+            </li>
+        </ul>
+
+
+
+        <br>
+
+        <ul id="tuitorial">
+            <li><span class="gfg">Food processing </span>
+                <ol class="cover" type="i">
+
+
+                    <li>
+                        <spna class="gfg">Bread and bakery
+                            </span>
+                            <ol class="cover" type="a">
+
+
+                                <li>Craft baker</li>
+
+
+                            </ol>
+                    </li>
+                    <li>
+                        <spna class="gfg">Fruits and vegetables </span>
+                            <ol class="cover" type="a">
+                                <li>Food microbiologist</li>
+
+
+                            </ol>
+                    </li>
+                    <li>
+                        <span class="gfg">Food grain milling </span>
+                        <ol class="cover" type="a">
+                            <li>Milling technician</li>
+
+
+                        </ol>
+
+                    <li>
+                        <spna class="gfg">Fish and sea food </span>
+
+                            <ol class="cover" type="a">
+                                <li>Cold storage technician</li>
+
+
+                            </ol>
+
+
+                    </li>
+
+                    <li>
+
+                        <spna class="gfg">Soya food
+                            </span>
+                            <ol class="cover" type="a">
+                                <li>Production manager</li>
+
+
+                            </ol>
+
+
+                    </li>
+
+            </li>
+            </ol>
+            </li>
+        </ul> </span>
+        <ol class="cover" type="i">
+
+
+            <li>
+                <spna class="gfg">Strategic electronics
+                    </span>
+                    <ol class="cover" type="a">
+
+
+                        <li>Electronic sub-assembly technician</li>
+
+
+                    </ol>
+            </li>
+            <li>
+                <spna class="gfg">PCB assembly </span>
+                    <ol class="cover" type="a">
+                        <li>PCB cam engineer</li>
+
+
+                    </ol>
+            </li>
+            <li>
+                <span class="gfg">IT hardware</span>
+                <ol class="cover" type="a">
+                    <li>HVAC technician</li>
+
+
+                </ol>
+
+            <li>
+                <spna class="gfg">Industrial electronics </span>
+
+                    <ol class="cover" type="a">
+                        <li>Electrical design developer</li>
+
+
+                    </ol>
+
+
+            </li>
+
+            <li>
+
+                <spna class="gfg">Electronics and hardware
+                    </span>
+                    <ol class="cover" type="a">
+                        <li>Field engineer RCAW</li>
+
+
+                    </ol>
+
+
+            </li>
+
+            </li>
+        </ol>
+        </li>
+        </ul>
+        </span>
+        <ol class="cover" type="i">
+
+
+            <li>
+                <spna class="gfg">Machine tools
+                    </span>
+                    <ol class="cover" type="a">
+
+
+                        <li>Metal arc weldor</li>
+
+
+                    </ol>
+            </li>
+            <li>
+                <spna class="gfg">Dies </span>
+                    <ol class="cover" type="a">
+                        <li>CNC programmer</li>
+
+
+                    </ol>
+            </li>
+            <li>
+                <span class="gfg">Moulds and press tools</span>
+                <ol class="cover" type="a">
+                    <li>Designer mechanical</li>
+
+
+                </ol>
+
+            <li>
+                <spna class="gfg">Textile manufacturing machinery </span>
+
+                    <ol class="cover" type="a">
+                        <li>Fitter fabrication</li>
+
+
+                    </ol>
+
+
+            </li>
+
+            <li>
+
+                <spna class="gfg">Plastics manufacturing machinery</span>
+                    <ol class="cover" type="a">
+                        <li>Production engineer</li>
+
+
+                    </ol>
+
+
+            </li>
+
+            </li>
+        </ol>
+        </li>
+        </ul>
+
+
+
+
+
+
+
+
+
+
+        </span>
+        <ol class="cover" type="i">
+
+
+            <li>
+                <spna class="gfg">IT services </span>
+                    <ol class="cover" type="a">
+
+
+                        <li>Analyst</li>
+
+
+                    </ol>
+            </li>
+            <li>
+                <spna class="gfg">Business process management </span>
+                    <ol class="cover" type="a">
+                        <li>Collections executive</li>
+
+
+                    </ol>
+            </li>
+            <li>
+                <span class="gfg">Engineering R&D</span>
+                <ol class="cover" type="a">
+                    <li>Software engineer</li>
+
+
+                </ol>
+
+            <li>
+                <spna class="gfg">Software product development</span>
+
+                    <ol class="cover" type="a">
+                        <li>Design engineer</li>
+
+
+                    </ol>
+
+
+            </li>
+
+            <li>
+
+                <spna class="gfg">Future skills</span>
+                    <ol class="cover" type="a">
+                        <li>Blockchain architect</li>
+
+
+                    </ol>
+
+
+            </li>
+
+            </li>
+        </ol>
+        </li>
+        </ul>
+
+
+
+
+
+
+
+        <script>
+            var toggler = document.getElementsByClassName("gfg");
+            var i;
+
+            for (i = 0; i < toggler.length; i++) {
+                toggler[i].addEventListener("click",
+                    function () {
+                        this.parentElement.querySelector(".cover")
+                            .classList.toggle("active");
+                        this.classList.toggle("gfg-down");
+                    }
+                );
+            }
+        </script>
+    </body>
+
+    </html>
